@@ -1,0 +1,456 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------Navbar------------------------------------*/
+
+.nav{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 1px 10px gray;
+}
+
+.nav .logo{
+    width: 20vw;
+    height: 100%;
+}
+
+.nav .logo img{
+    width: 15vw;
+    height: 90%;
+    margin-left: 6vw ;
+}
+
+
+
+
+.nav .links{
+    width: 52vw;
+    height: 100%;
+}
+
+.nav .links ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .links ul li{
+    cursor: pointer;
+    margin-top: 35px;
+    margin-right: 40px;
+    font-size: 19px;
+    color: #858181;
+    position: relative;
+}
+
+.nav .links ul li::after{
+    content: '';
+    height: 4px;
+    width: 0%;
+    background-color: #BF9270;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.nav .links ul li:hover::after{
+    width: 100%;
+ }
+
+
+.nav .btns{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.nav .btns .btn1{
+    width: 9.5vw;
+    height: 5vh;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    background-color: #BF9270;
+    cursor: pointer;
+}
+
+.nav .btns .btn1:hover{
+    color: #BF9270;
+    background-color: white;
+    border: solid 3px #BF9270;
+}
+
+.nav .btns .btn2{
+    width: 9.5vw;
+    height: 5vh;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    background-color: #BF9270;
+    cursor: pointer;
+}
+
+.nav .btns .btn2:hover{
+    color: #BF9270;
+    background-color: white;
+    border: solid 3px #BF9270;
+}
+
+
+
+/*------------------------------------------------------------------------Herooo------------------------------------*/
+
+.sec1 .hero{
+    width: 80%;
+    height: 400px;
+    background-color: black;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.sec1 .hero img{
+    width: 100%;
+    height: 400px;
+    opacity: 0.5;
+}
+
+.sec1 .hero .search{
+    width: 50VW;
+    bottom: 100px;
+    left: 15vw;
+    position: absolute;
+}
+
+.sec1 .hero .search h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.sec1 .hero .search p{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    padding-bottom: 60px;
+}
+
+.sec1 .hero .search input[type=text]{
+    width: 100%;
+    height: 5.5vh;
+    opacity: 0.7;
+}
+
+::placeholder{
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+
+/*------------------------------------------------------------------------double rec------------------------------------*/
+
+/*-------------rec1---------------------------------------------*/
+.sec2{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.sec2 .rec1 {
+    width: 50%;
+    height: 100%;
+    background-color: #CFD2CF;
+    overflow: hidden;
+    position: relative;
+}
+
+.sec2 .rec1 img {
+    width: 55%;
+    padding-top: 10px;
+    position: absolute;
+    left: -35px;
+}
+
+.sec2 .show{
+    position: absolute;
+    top: 12vh;
+    left: 20vw;
+    text-align: center;
+}
+
+.sec2 .show h1{
+    font-size: 30px;
+    color: white;
+}
+
+.sec2 .show button{
+    padding: 10px 80px;
+    margin-top: 30px;
+    color: white;
+    background-color: transparent;
+    border: solid 3px white;
+    font-weight: bolder;
+}
+
+.sec2 .show button:hover{
+    color: #858181;
+    background-color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+/*-------------------rec2-------------------------------------*/
+
+.sec2 .rec2 {
+    width: 50%;
+    height: 100%;
+    background-color: #D7C0AE;
+    position: relative;
+}
+
+.sec2 .rec2 img {
+    width: 45%;
+    padding-top: 10px;
+    position: absolute;
+    left: 290px;
+    top: 20px;
+}
+
+.sec2 .rec2 .show{
+    position: absolute;
+    top: 12vh;
+    left: 85px;
+    text-align: center;
+}
+
+.sec2 .show h1{
+    font-size: 30px;
+    color: white;
+}
+
+.sec2 .show button{
+    padding: 10px 80px;
+    margin-top: 30px;
+    color: white;
+    background-color: transparent;
+    border: solid 3px white;
+    font-weight: bolder;
+}
+
+.sec2 .show button:hover{
+    color: #858181;
+    background-color: white;
+    border: solid 3px white;
+    cursor: pointer;
+
+}
+
+
+/*------------------------------------------------------------------------Categories------------------------------------*/
+
+.categories ul{
+    display: flex;
+    margin-left: 7.7vw;
+    list-style-type: none;
+}
+
+.categories ul li {
+    font-size: 18px;
+    text-decoration: none;
+    padding-right: 2.9vw;
+    color: #858181;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.categories ul li:hover{
+    color: #BF9270;
+}
+
+.categories ul li::after{
+    content:'';
+    height: 4px;
+    width: 0%;
+    background-color: #BF9270;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.categories ul li:hover::after{
+    width: 50%;
+}
+
+/*-----------------------------------------------------Mobiles------------------Television------------------------------------*/
+
+.tv{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tv .t1{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.tv .t1 .title{
+    padding-top: 5px;
+}
+
+.tv .t1 .details{
+    color: white;
+    background-color: #D7C0AE;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 115px;
+    top: 105px;
+    opacity: 0;
+}
+
+.tv .t1 .details:hover{
+    background-color: white;
+    color: #D7C0AE;
+}
+
+.tv .t1:hover .details{
+    opacity: 1;
+}
+
+.tv .t1 p{
+    font-size: 17px;
+}
+
+.tv .t1 .sora{
+    width: 350px;
+    height: 250px;
+    border-radius: 6px;
+}
+
+.tv .t1:hover .sora{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.t1 .rate{
+    position: absolute;
+    left: 233px;
+    top: 258px;
+    cursor: pointer;
+}
+
+.tv .t1 .disc{
+    color: #BF9270;
+    font-size: 18px;
+    position: absolute;
+    left: 19vw;
+    top: 37.3vh;
+    padding-top: 10px;
+
+}
+
+
+
+.see{
+    margin-left: 45%;
+    padding: 10px 30px;
+    color: white;
+    background-color: #D7C0AE;
+    border: solid 3px #D7C0AE;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+
+.see:hover{
+    color: #D7C0AE;
+    background-color: white;
+    border: solid 3px #D7C0AE;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------subscribe----------------------------------------------------------*/
+
+
+.subscribe{
+    width: 100%;
+    height: 250px;
+    background-color: #D7C0AE;
+    display: flex;
+}
+
+.subscribe .kalam{
+    width: 40%;
+    height: 100%;
+}
+
+.subscribe .kalam h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 75px;
+    padding-left: 20px;
+    color: white;
+}
+
+.sub{
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    padding-top: 100px ;
+}
+
+.sub input[type=text]{
+    width: 30vw;
+    height: 7vh;
+    border-radius: 6px;
+    opacity: 0.9;
+    border: none;
+}
+
+.sub button{
+    color: #858181;
+    padding: 15px 30px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: solid 3px white;
+    font-weight: bolder;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.sub button:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------Footer---Bootstrap-------------------------------------------------------*/
+
+
+
+
+
